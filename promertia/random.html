@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            --bg-color: #212121;
+            background-color: var(--bg-color);
+            padding: 1rem 2rem;
+            border-radius: 1.25rem;
+        }
+
+        .loader {
+            color: rgb(124, 124, 124);
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 40px;
+            padding: 10px 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            border-radius: 8px;
+            position: relative; /* Added position relative */
+        }
+
+        .words {
+            overflow: hidden;
+            position: absolute; /* Changed to absolute */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .word {
+            display: block;
+            padding-right: 6px; /* Adjusted padding-right */
+            color: #2c2cce;
+            animation: spin_4991 4s infinite;
+        }
+
+        @keyframes spin_4991 {
+            0% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateY(-100%);
+            }
+
+            45% {
+                transform: translateY(-100%);
+            }
+
+            50% {
+                transform: translateY(-200%);
+            }
+
+            70% {
+                transform: translateY(-200%);
+            }
+
+            75% {
+                transform: translateY(-300%);
+            }
+
+            95% {
+                transform: translateY(-300%);
+            }
+
+            100% {
+                transform: translateY(-400%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="loader">
+            <div class="words">
+                <span class="word">buttons</span>
+                <span class="word">forms</span>
+                <span class="word">switches</span>
+                <span class="word">cards</span>
+                <span class="word">buttons</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
